@@ -1,0 +1,8 @@
+[Oo]bj/
+[Bb]in/
+.vs/
+.nuget/
+packages/
+*.user
+*.userprefs
+*.sln.ide
