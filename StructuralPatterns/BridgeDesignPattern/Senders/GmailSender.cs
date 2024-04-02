@@ -52,10 +52,5 @@ namespace BridgeDesignPattern.Senders
                 throw new Exception("error occured while starting gmail service.");
             }
         }
-
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

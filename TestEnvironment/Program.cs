@@ -1,6 +1,7 @@
 ﻿using BridgeDesignPattern.Messages;
 using BridgeDesignPattern.Senders;
 using BuilderDesignPattern;
+using DecoratorDesignPattern;
 using SingletonDesignPattern;
 
 internal class Program
@@ -10,6 +11,7 @@ internal class Program
         #region Creational Design Patterns
 
         #region Builder Pattern
+        
         //var letterDirector = new LetterDirector();
 
         //var referenceLetter = letterDirector.ConstructLetter(new ReferenceLetterBuilder());
@@ -17,9 +19,11 @@ internal class Program
 
         //var envelopeLetter = letterDirector.ConstructLetter(new EnvelopeBuilder());
         //envelopeLetter.Display();
+        
         #endregion
 
         #region Singleton Pattern
+
         //var query = @"INSERT INTO AuditLogs 
         //              VALUES('/about',1,'empty','GET','Admin','Account','Leadership',200,GETDATE(), GETDATE(), GETDATE(),null, null,null)";
 
@@ -44,6 +48,7 @@ internal class Program
 
         //process_first.Join();
         //process_second.Join();
+
         #endregion
 
         #endregion
@@ -51,18 +56,38 @@ internal class Program
         #region Structural Design Patterns
 
         #region Bridge Pattern
-        var gmailSender = new GmailSender("smtp.mail.ru", "587", "dev.ahmadov.mahammad@gmail.com", "password");
-        gmailSender.Start();
 
-        var telegramSender = new TelegramSender("apiKey");
-        telegramSender.Start();
+        //var gmailSender = new GmailSender("smtp.mail.ru", "587", "dev.ahmadov.mahammad@gmail.com", "password");
+        //gmailSender.Start();
+
+        //var telegramSender = new TelegramSender("apiKey");
+        //telegramSender.Start();
 
 
-        var confirmMessage = new ConfirmMessage("Confirmation Letter", "Your message has been approved") { MessageSender = telegramSender };
-        confirmMessage.Send();
+        //var confirmMessage = new ConfirmMessage("Confirmation Letter", "Your message has been approved") { MessageSender = telegramSender };
+        //confirmMessage.Send();
 
-        var errorMessage = new ErrorMessage("Error Letter", "Your message has been cancelled") { MessageSender = gmailSender };
-        errorMessage.Send();
+        //var errorMessage = new ErrorMessage("Error Letter", "Your message has been cancelled") { MessageSender = gmailSender };
+        //errorMessage.Send();
+
+        #endregion
+
+        #region Decorator Pattern
+
+        IBeverage beverage = new Tea();
+        Console.WriteLine(beverage.Description + " $" + beverage.Cost);
+        //Black Tea $1.5
+
+        beverage = new Milk(beverage);
+        beverage = new Caramel(beverage);
+        Console.WriteLine(beverage.Description + " $" + beverage.Cost);
+        //Black Tea, Extra Milk, Caramel $2.75
+
+        beverage = new Espresso();
+        beverage = new Caramel(beverage);
+        beverage = new Caramel(beverage);
+        Console.WriteLine(beverage.Description + " $" + beverage.Cost);
+        //Espresso, Caramel, Caramel $3.49
 
         #endregion
 

@@ -11,6 +11,7 @@
     <ProjectReference Include="..\CreationalPatterns\BuilderDesignPattern\BuilderDesignPattern.csproj" />
     <ProjectReference Include="..\CreationalPatterns\SingletonDesignPattern\SingletonDesignPattern.csproj" />
     <ProjectReference Include="..\StructuralPatterns\BridgeDesignPattern\BridgeDesignPattern.csproj" />
+    <ProjectReference Include="..\StructuralPatterns\DecoratorDesignPattern\DecoratorDesignPattern.csproj" />
   </ItemGroup>
 
 </Project>
