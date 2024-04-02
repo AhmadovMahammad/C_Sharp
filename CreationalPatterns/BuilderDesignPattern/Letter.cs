@@ -1,4 +1,4 @@
-﻿namespace BuilderPattern
+﻿namespace BuilderDesignPattern
 {
     public enum PaperSize
     {
