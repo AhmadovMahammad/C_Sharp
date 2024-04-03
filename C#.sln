@@ -31,6 +31,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BehavioralPatterns", "Behav
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibilityDesignPattern", "Design_Patterns\BehavioralPatterns\ChainOfResponsibilityDesignPattern\ChainOfResponsibilityDesignPattern.csproj", "{20CB8EB3-DE47-421E-8551-07D8AED17584}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MementoDesignPattern", "Design_Patterns\BehavioralPatterns\MementoDesignPattern\MementoDesignPattern.csproj", "{90A9F871-98DF-48D1-875F-4A11060F88B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{20CB8EB3-DE47-421E-8551-07D8AED17584}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20CB8EB3-DE47-421E-8551-07D8AED17584}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20CB8EB3-DE47-421E-8551-07D8AED17584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90A9F871-98DF-48D1-875F-4A11060F88B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90A9F871-98DF-48D1-875F-4A11060F88B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90A9F871-98DF-48D1-875F-4A11060F88B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90A9F871-98DF-48D1-875F-4A11060F88B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{E3689664-B142-465E-AC2C-A24F8712EBFF} = {D3D395DC-F01C-4E3C-8D33-C6D6A2458493}
 		{11D9A647-7476-4B1C-BF8C-4D3ED841EF33} = {DE4E40A3-75ED-4394-A6D6-D948DEFED3FD}
 		{20CB8EB3-DE47-421E-8551-07D8AED17584} = {11D9A647-7476-4B1C-BF8C-4D3ED841EF33}
+		{90A9F871-98DF-48D1-875F-4A11060F88B3} = {11D9A647-7476-4B1C-BF8C-4D3ED841EF33}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {02DAC657-4069-4BC6-A54D-C1D2E3050C49}

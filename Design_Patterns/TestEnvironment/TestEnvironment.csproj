@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BehavioralPatterns\ChainOfResponsibilityDesignPattern\ChainOfResponsibilityDesignPattern.csproj" />
+    <ProjectReference Include="..\BehavioralPatterns\MementoDesignPattern\MementoDesignPattern.csproj" />
     <ProjectReference Include="..\CreationalPatterns\BuilderDesignPattern\BuilderDesignPattern.csproj" />
     <ProjectReference Include="..\CreationalPatterns\SingletonDesignPattern\SingletonDesignPattern.csproj" />
     <ProjectReference Include="..\StructuralPatterns\BridgeDesignPattern\BridgeDesignPattern.csproj" />

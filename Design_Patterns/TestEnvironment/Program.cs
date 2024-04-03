@@ -6,6 +6,7 @@ using SingletonDesignPattern;
 using BuilderDesignPattern;
 using ChainOfResponsibilityDesignPattern;
 using System.Reflection;
+using MementoDesignPattern;
 
 internal class Program
 {
@@ -175,6 +176,32 @@ internal class Program
         //    [ justtohide007@gmail.com ] : error occured while registering.
         // */
 
+        #endregion
+
+        #region Memento Pattern / Snapshot
+
+        //var notepadHistory = new NotepadEditorHistory();
+        //var editor = new NotepadEditor
+        //{
+        //    Text = "hello",
+        //    MousePosition = new()
+        //    {
+        //        X = 15,
+        //        Y = 20,
+        //    }
+        //};
+        //notepadHistory.SaveEditor(editor);
+
+        //editor.WriteText("world");
+        //editor.WriteText("how are you?");
+        //notepadHistory.SaveEditor(editor);
+
+        //notepadHistory.UndoEditor(editor);
+        //editor.GetCurrentText();
+
+        //notepadHistory.RedoEditor(editor);
+        //editor.GetCurrentText();
+        
         #endregion
 
         #endregion
