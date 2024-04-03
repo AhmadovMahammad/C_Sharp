@@ -5,7 +5,7 @@ namespace BridgeDesignPattern.Senders
 {
     public class GmailSender : MessageSender
     {
-        private SmtpClient? _smtpClient;
+        private SmtpClient? SmtpClient;
         public string SmtpServer { get; }
         public string SmtpPort { get; }
         public string Username { get; }
@@ -41,7 +41,7 @@ namespace BridgeDesignPattern.Senders
                 var password = Password;
                 var smtpServer = SmtpServer;
                 var smtpPort = SmtpPort;
-                _smtpClient = new("smtp.gmail.com", Convert.ToInt32(smtpPort))
+                SmtpClient = new("smtp.gmail.com", Convert.ToInt32(smtpPort))
                 {
                     Credentials = new NetworkCredential(email, password),
                     EnableSsl = true

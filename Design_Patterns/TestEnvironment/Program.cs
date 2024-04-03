@@ -4,6 +4,8 @@ using DecoratorDesignPattern;
 using FlyweightDesignPattern;
 using SingletonDesignPattern;
 using BuilderDesignPattern;
+using ChainOfResponsibilityDesignPattern;
+using System.Reflection;
 
 internal class Program
 {
@@ -103,6 +105,75 @@ internal class Program
 
         ////for non-pattern situation, we should created a new instance for each enemy.
         ////on the contrary, we created 24 new instances for 10_000 enemy
+
+        #endregion
+
+        #endregion
+
+        #region Behavioral Design Patterns
+
+        #region ChainOfResponsibility Pattern
+
+        //consider that we have a class that checks all the validations in itself
+
+        //One function with too many if/else statements violates the “Single Responsibility Principle”
+        //as this function just does “too” many things!
+
+        //Although the code looks somewhat readable,
+        //in future if we have to add new input fields,
+        //we would need to add more validations to this function which eventually grows bigger.
+
+        //-----------------------------------------------------------
+        //So we should apply this design pattern.
+
+        //var registerProcessor = new UserRegisterProcessor();
+        //var listOfUsers = new List<UserDto>
+        //{
+        //    new()
+        //    {
+        //        Firstname = "Mahammad",
+        //        Lastname = "Ahmadov",
+        //        Age = 21,
+        //        Email = "dev.ahmadov.mahammad@gmail.com",
+        //        Password = "random_pass"
+        //    },
+        //    new()
+        //    {
+        //        Firstname = "Mahammad",
+        //        Lastname = "Ahmadov",
+        //        Age = 15,
+        //        Email = "randomMail@mail.ru",
+        //        Password = "short"
+        //    },
+        //    new()
+        //    {
+        //        Firstname = "Mahammad",
+        //        Lastname = "Ahmadov",
+        //        Age = 16,
+        //        Email = "justtohide007@gmail.com",
+        //        Password = "short124"
+        //    },
+        //};
+
+        //foreach (var user in listOfUsers)
+        //{
+        //    var notificationMessage = string.Empty;
+        //    if (registerProcessor.Register(user))
+        //        notificationMessage += "registered successfully.";
+        //    else
+        //        notificationMessage += "error occured while registering.";
+        //    Console.WriteLine("[ {0} ] : {1}\n", user.Email, notificationMessage);
+        //}
+
+        ///*
+        // 1. [ dev.ahmadov.mahammad@gmail.com ] : registered successfully.
+
+        // 2. error message : password length should be at least 8 characters.
+        //    [ randomMail@mail.ru ] : error occured while registering.
+
+        // 3. error message : only 18+ ages people can register fromm this website
+        //    [ justtohide007@gmail.com ] : error occured while registering.
+        // */
 
         #endregion
 
