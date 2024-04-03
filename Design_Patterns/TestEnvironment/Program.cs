@@ -7,6 +7,8 @@ using BuilderDesignPattern;
 using ChainOfResponsibilityDesignPattern;
 using System.Reflection;
 using MementoDesignPattern;
+using StrategyDesignPattern;
+using StrategyDesignPattern.Strategies;
 
 internal class Program
 {
@@ -111,7 +113,7 @@ internal class Program
 
         #endregion
 
-        #region Behavioral Design Patterns
+        #region Behavioral Design Patterns  
 
         #region ChainOfResponsibility Pattern
 
@@ -201,7 +203,33 @@ internal class Program
 
         //notepadHistory.RedoEditor(editor);
         //editor.GetCurrentText();
-        
+
+        #endregion
+
+        #region Strategy Pattern
+
+        //var context = new RouteContext();
+        //context.Travel();
+        ////you did not set a strategy to travel
+
+        //context.SetStrategy(new FastestStrategy());
+        //context.Travel();
+        ///*
+        // Path : Sumgait ---> Train station ---> Baku
+        // Duration : 60
+        // Cost : $1.1
+        // Transportation : Train
+        // */
+
+        //context.SetStrategy(new CheapestStrategy());
+        //context.Travel();
+        ///*
+        // Path : Path A ---> Path B ---> Path C ---> Path D
+        // Duration : 120
+        // Cost : $0.8
+        // Transportation : Car
+        // */
+
         #endregion
 
         #endregion
