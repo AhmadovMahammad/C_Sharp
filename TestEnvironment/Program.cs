@@ -1,8 +1,9 @@
 ﻿using BridgeDesignPattern.Messages;
 using BridgeDesignPattern.Senders;
 using BuilderDesignPattern;
-using DecoratorDesignPattern;
 using SingletonDesignPattern;
+using DecoratorDesignPattern;
+using FlyweightDesignPattern;
 
 internal class Program
 {
@@ -11,7 +12,7 @@ internal class Program
         #region Creational Design Patterns
 
         #region Builder Pattern
-        
+
         //var letterDirector = new LetterDirector();
 
         //var referenceLetter = letterDirector.ConstructLetter(new ReferenceLetterBuilder());
@@ -19,7 +20,7 @@ internal class Program
 
         //var envelopeLetter = letterDirector.ConstructLetter(new EnvelopeBuilder());
         //envelopeLetter.Display();
-        
+
         #endregion
 
         #region Singleton Pattern
@@ -74,20 +75,34 @@ internal class Program
 
         #region Decorator Pattern
 
-        IBeverage beverage = new Tea();
-        Console.WriteLine(beverage.Description + " $" + beverage.Cost);
-        //Black Tea $1.5
+        //IBeverage beverage = new Tea();
+        //Console.WriteLine(beverage.Description + " $" + beverage.Cost);
+        ////Black Tea $1.5
 
-        beverage = new Milk(beverage);
-        beverage = new Caramel(beverage);
-        Console.WriteLine(beverage.Description + " $" + beverage.Cost);
-        //Black Tea, Extra Milk, Caramel $2.75
+        //beverage = new Milk(beverage);
+        //beverage = new Caramel(beverage);
+        //Console.WriteLine(beverage.Description + " $" + beverage.Cost);
+        ////Black Tea, Extra Milk, Caramel $2.75
 
-        beverage = new Espresso();
-        beverage = new Caramel(beverage);
-        beverage = new Caramel(beverage);
-        Console.WriteLine(beverage.Description + " $" + beverage.Cost);
-        //Espresso, Caramel, Caramel $3.49
+        //beverage = new Espresso();
+        //beverage = new Caramel(beverage);
+        //beverage = new Caramel(beverage);
+        //Console.WriteLine(beverage.Description + " $" + beverage.Cost);
+        ////Espresso, Caramel, Caramel $3.49
+
+        #endregion
+
+        #region Flyweight Pattern
+
+        //var gameArena = new GameArena();
+        //gameArena.StartGame(100, 100);
+
+        ////Result : 
+        ////Total Grid : 10000
+        ////Instances count : 24
+
+        ////for non-pattern situation, we should created a new instance for each enemy.
+        ////on the contrary, we created 24 new instances for 10_000 enemy
 
         #endregion
 
