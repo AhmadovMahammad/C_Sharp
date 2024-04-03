@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design_Patterns", "Design_Patterns", "{DE4E40A3-75ED-4394-A6D6-D948DEFED3FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeetCode", "LeetCode", "{D02088B2-9A36-4337-A265-DD60A58BF2DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestEnvironment", "Design_Patterns\TestEnvironment\TestEnvironment.csproj", "{E3095650-DE5E-4C6D-ABB5-57C19A637308}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreationalPatterns", "CreationalPatterns", "{8AA8C617-E9E0-4E67-87A9-82724C76AD9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StructuralPatterns", "StructuralPatterns", "{81956A6E-E899-41F8-9DCF-FFFAE416EF0F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderDesignPattern", "Design_Patterns\CreationalPatterns\BuilderDesignPattern\BuilderDesignPattern.csproj", "{CA0755F6-8693-4283-AFDF-2BD9D88464E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonDesignPattern", "Design_Patterns\CreationalPatterns\SingletonDesignPattern\SingletonDesignPattern.csproj", "{A3F6BB95-6340-44E4-8A40-1BCCCDA71503}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BridgeDesignPattern", "Design_Patterns\StructuralPatterns\BridgeDesignPattern\BridgeDesignPattern.csproj", "{4E11076B-0AF9-46A3-95D0-6A1F42704826}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorDesignPattern", "Design_Patterns\StructuralPatterns\DecoratorDesignPattern\DecoratorDesignPattern.csproj", "{4E7F544B-D44B-4418-9F40-A9C4B547C271}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlyweightDesignPattern", "Design_Patterns\StructuralPatterns\FlyweightDesignPattern\FlyweightDesignPattern.csproj", "{8D9B1518-30E2-4C90-83A6-5F85E43DDEDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions", "Solutions", "{D3D395DC-F01C-4E3C-8D33-C6D6A2458493}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validate_IpAddress", "LeetCode\Solutions\Validate_IpAddress\Validate_IpAddress.csproj", "{E3689664-B142-465E-AC2C-A24F8712EBFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3095650-DE5E-4C6D-ABB5-57C19A637308}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3095650-DE5E-4C6D-ABB5-57C19A637308}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3095650-DE5E-4C6D-ABB5-57C19A637308}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3095650-DE5E-4C6D-ABB5-57C19A637308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA0755F6-8693-4283-AFDF-2BD9D88464E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA0755F6-8693-4283-AFDF-2BD9D88464E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA0755F6-8693-4283-AFDF-2BD9D88464E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA0755F6-8693-4283-AFDF-2BD9D88464E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3F6BB95-6340-44E4-8A40-1BCCCDA71503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F6BB95-6340-44E4-8A40-1BCCCDA71503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F6BB95-6340-44E4-8A40-1BCCCDA71503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F6BB95-6340-44E4-8A40-1BCCCDA71503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E11076B-0AF9-46A3-95D0-6A1F42704826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E11076B-0AF9-46A3-95D0-6A1F42704826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E11076B-0AF9-46A3-95D0-6A1F42704826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E11076B-0AF9-46A3-95D0-6A1F42704826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E7F544B-D44B-4418-9F40-A9C4B547C271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E7F544B-D44B-4418-9F40-A9C4B547C271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E7F544B-D44B-4418-9F40-A9C4B547C271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E7F544B-D44B-4418-9F40-A9C4B547C271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D9B1518-30E2-4C90-83A6-5F85E43DDEDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D9B1518-30E2-4C90-83A6-5F85E43DDEDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D9B1518-30E2-4C90-83A6-5F85E43DDEDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D9B1518-30E2-4C90-83A6-5F85E43DDEDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3689664-B142-465E-AC2C-A24F8712EBFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3689664-B142-465E-AC2C-A24F8712EBFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3689664-B142-465E-AC2C-A24F8712EBFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3689664-B142-465E-AC2C-A24F8712EBFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E3095650-DE5E-4C6D-ABB5-57C19A637308} = {DE4E40A3-75ED-4394-A6D6-D948DEFED3FD}
+		{8AA8C617-E9E0-4E67-87A9-82724C76AD9B} = {DE4E40A3-75ED-4394-A6D6-D948DEFED3FD}
+		{81956A6E-E899-41F8-9DCF-FFFAE416EF0F} = {DE4E40A3-75ED-4394-A6D6-D948DEFED3FD}
+		{CA0755F6-8693-4283-AFDF-2BD9D88464E0} = {8AA8C617-E9E0-4E67-87A9-82724C76AD9B}
+		{A3F6BB95-6340-44E4-8A40-1BCCCDA71503} = {8AA8C617-E9E0-4E67-87A9-82724C76AD9B}
+		{4E11076B-0AF9-46A3-95D0-6A1F42704826} = {81956A6E-E899-41F8-9DCF-FFFAE416EF0F}
+		{4E7F544B-D44B-4418-9F40-A9C4B547C271} = {81956A6E-E899-41F8-9DCF-FFFAE416EF0F}
+		{8D9B1518-30E2-4C90-83A6-5F85E43DDEDB} = {81956A6E-E899-41F8-9DCF-FFFAE416EF0F}
+		{D3D395DC-F01C-4E3C-8D33-C6D6A2458493} = {D02088B2-9A36-4337-A265-DD60A58BF2DD}
+		{E3689664-B142-465E-AC2C-A24F8712EBFF} = {D3D395DC-F01C-4E3C-8D33-C6D6A2458493}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02DAC657-4069-4BC6-A54D-C1D2E3050C49}
+	EndGlobalSection
+EndGlobal

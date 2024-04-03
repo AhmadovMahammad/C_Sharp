@@ -1,13 +1,13 @@
 ﻿using BridgeDesignPattern.Messages;
 using BridgeDesignPattern.Senders;
-using BuilderDesignPattern;
-using SingletonDesignPattern;
 using DecoratorDesignPattern;
 using FlyweightDesignPattern;
+using SingletonDesignPattern;
+using BuilderDesignPattern;
 
 internal class Program
 {
-    private static void Main(string[] args)
+    private static void Main()
     {
         #region Creational Design Patterns
 
@@ -28,21 +28,21 @@ internal class Program
         //var query = @"INSERT INTO AuditLogs 
         //              VALUES('/about',1,'empty','GET','Admin','Account','Leadership',200,GETDATE(), GETDATE(), GETDATE(),null, null,null)";
 
-        //Thread 1
+        ////Thread 1
         //var process_first = new Thread(() =>
         //{
         //    var dbConnection = SingletonDatabaseConnection.GetInstance("User Id=MAHAMMADA;Server=.;Database=BraInvest_CourseManagement;Integrated Security=Yes;");
         //    dbConnection.RunQuery(query);
         //});
 
-        //Thread 2
+        ////Thread 2
         //var process_second = new Thread(() =>
         //{
         //    var dbConnection = SingletonDatabaseConnection.GetInstance("User Id=RandomUsername;Server=.;Database=BraInvest_CourseManagement;Integrated Security=Yes;");
         //    dbConnection.RunQuery(query);
         //});
 
-        //Alhough we get second instance of database connection with random properties, it uses only the first one
+        ////Alhough we get second instance of database connection with random properties, it uses only the first one
 
         //process_first.Start();
         //process_second.Start();

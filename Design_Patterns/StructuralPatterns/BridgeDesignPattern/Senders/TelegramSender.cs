@@ -1,4 +1,5 @@
 ﻿using Telegram.Bot;
+
 namespace BridgeDesignPattern.Senders
 {
     public class TelegramSender : MessageSender
