@@ -9,6 +9,8 @@ using System.Reflection;
 using MementoDesignPattern;
 using StrategyDesignPattern;
 using StrategyDesignPattern.Strategies;
+using ObserverDesignPattern;
+using ObserverDesignPattern.Events;
 
 internal class Program
 {
@@ -229,6 +231,48 @@ internal class Program
         // Cost : $0.8
         // Transportation : Car
         // */
+
+        #endregion
+
+        #region Observer Pattern
+
+        //consider that here is server side...
+        var _eventAggregator = new EventAggregator();
+
+        //start client side.
+        _ = new Client(_eventAggregator);
+
+        for (int i = 0; i < 1_000; i++)
+        {
+            if (i % 3 == 0 && i % 5 == 0 && i % 20 == 0)
+                _eventAggregator.Publish(new InvalidOperationEvent($"error occured for number : {i}"));
+            else
+                _eventAggregator.Publish(new InternalEvent());
+        }
+
+        //so whenever error occurs, server notify all the subscribers about current error
+        /*
+         
+        result from client side who subscribe onto [Invalid Operation Event]: 
+        
+        exception : error occured for number : 0
+        exception : error occured for number : 60
+        exception : error occured for number : 120
+        exception : error occured for number : 180
+        exception : error occured for number : 240
+        exception : error occured for number : 300
+        exception : error occured for number : 360
+        exception : error occured for number : 420
+        exception : error occured for number : 480
+        exception : error occured for number : 540
+        exception : error occured for number : 600
+        exception : error occured for number : 660
+        exception : error occured for number : 720
+        exception : error occured for number : 780
+        exception : error occured for number : 840
+        exception : error occured for number : 900
+        exception : error occured for number : 960
+         */
 
         #endregion
 
